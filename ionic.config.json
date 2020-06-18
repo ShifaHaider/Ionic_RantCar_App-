@@ -1,0 +1,7 @@
+{
+  "name": "rantCarApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
