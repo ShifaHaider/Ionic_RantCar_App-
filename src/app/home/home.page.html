@@ -1,20 +1,279 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <div id="main" #main>
+    <div id="firstDiv" #firstDiv>
+      <div id="toolbar" #toolbar>
+        <div id="imgDiv" #imgDiv >
+      
+          <img src="../../assets/userImg.png" alt="not-fount" height="40px" width="40px" class="hover-button"/>
+          <img src="../../assets/calenderIcn.png" alt="not-fount" height="20px" width="20px" class="hover-button"/>
+        </div>
+        <div id="barText" #barText>
+          What car type <br> do you want to rent?
+        </div>
+        <div class="container">
+          <div class="input-container">
+              <input type="text" placeholder="Search type , categories, location....">
+              <div class="search-icon-container" >
+                 <img class="search-icon-img" src="../../assets/searchIcn.png" alt="">
+              </div>
+          </div>
+      </div>
+        <!-- <div id="inputDiv" #inputDiv><input type="text" placeholder="Search type , categories, location...." /></div> -->
+      </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <div id="popularCars" #popularCars>
+        <div class="card-head-container">
+          <div class="cardHead">Popular Cars</div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+          <div class="more hover-button">More  &nbsp;&nbsp;&nbsp; <img src="../../assets/vectorSmartObjectCopy3.png" alt=""></div>
+      </div>
+        <div id="popularCardContainer" #popularCardContainer >
+          <div id="popularCard" #popularCard class="hover-button">
+            <div style="background-color: #1B1B1B; width: 100%; height: 50%;">
+              <div class="f-div"  >
+                <div>
+                  <img src="../../assets/porcheLogo.png" alt="not" width="24px" height="26px">
+                </div>
+                <div style="display: inline-block; margin-left: 9px;">
+                  <p>Porsche 911 Carrera </p>
+                  <p class="secText">AED 600/Per Day</p>
+                </div>
+              </div>
+              <div class="carName">
+                PORSCHE
+              </div>
+              <div class="carImg">
+                <img src="../../assets/porcheCar.png" alt="not">
+              </div>
+              <div style="width: 100%;  height: 50%;">
+                <div class="f-div" style="position: relative; top: -22px;">
+                  <div>
+                    <img src="../../assets/speedMeter.png" alt="not" height="14px">
+                  </div>
+                  <div class="speed-container">
+                    <div class="speed">Speed</div>
+                    <b class="carSpeed">275 km/h</b>
+                  </div>
+                </div>
+                
+                <div class="card-bottom-text" style="top: -32px; ">MORE INFORMATION</div>
+                <!-- <img src="../../assets/arrowLeftBlack.png" alt="" style="float: right;"> -->
+         
+              </div>
+            </div>
+          </div>
+
+          <!-- <div id="popularCard" #popularCard>
+            <div style="background-color: #1B1B1B; width: 100%; height: 50%; ">
+              <div class="f-div">
+                <div >
+                  <img src="../../assets/porcheLogo.png" alt="not" width="16px" height="22px">
+                </div>
+                <div style="margin-left: 9px;">
+                  <p>Porsche 911 Carrera </p>
+                  <p class="secText">AED 600/Per Day</p>
+                </div>
+              </div>
+              <div class="carName">
+                PORSCHE
+              </div>
+            </div>
+              <div class="carImg">
+                <img src="../../assets/porcheCar.png" alt="not">
+              </div>
+          </div> -->
+          <div id="popularCard" #popularCard class="hover-button">
+            <div style="background-color: #F5901B; width: 100%; height: 50%;">
+              <div class="f-div">
+                <div>
+                  <img src="../../assets/lamborghiniLogo.png" alt="not" width="24px" height="26px">
+                </div>
+                <div style="display: inline-block; margin-left: 9px;">
+                  <p>Lamborghini Huracan </p>
+                  <p class="secText">AED 650/Per Day</p>
+                </div>
+              </div>
+              <div class="carName" id="Lamborghini" #Lamborghini>
+                LAMBORHINI
+              </div>
+              <div class="carImg">
+                <img src="../../assets/lamborghiniCar.png" alt="not">
+              </div>
+              <div style="width: 100%;  height: 50%;">
+                <div class="f-div">
+                  <div>
+                    <img src="../../assets/speedMeter.png" alt="not" height="14px">
+                  </div>
+                  <div class="speed-container">
+                    <div class="speed">Speed</div>
+                    <b class="carSpeed">275 km/h</b>
+                  </div>
+                </div>
+                <div>
+                <div class="card-bottom-text">MORE INFORMATION</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="popularCard" #popularCard class="hover-button">
+            <div style="background-color: #A70000; width: 100%; height: 50%;">
+              <div class="f-div">
+                <div >
+                  <img src="../../assets/ferrariLogo.png" alt="not" width="24px" height="26px">
+                </div>
+                <div style=" margin-left: 9px;">
+                  <p>Ferrari Portofino </p>
+                  <p class="secText">AED 650/Per Day</p>
+                </div>
+              </div>
+              <div class="carName" id="ferrari" #ferrari>
+                FERRARI
+              </div>
+              <div class="carImg">
+                <img src="../../assets/ferrariCar.png" alt="not">
+              </div>
+              <div style="width: 100%;  height: 50%;">
+                <div class="f-div">
+                  <div>
+                    <img src="../../assets/speedMeter.png" alt="not" height="14px">
+                  </div>
+                  <div class="speed-container">
+                    <div class="speed">Speed</div>
+                    <b class="carSpeed">275 km/h</b>
+                  </div>
+                </div>
+              </div>
+              <div class="card-bottom-text">MORE INFORMATION</div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="secondDiv" #secondDiv>
+      <div class="card-head-container">
+        <div class="cardHead">Recent Cars</div>
+
+        <div class="more hover-button">More  &nbsp;&nbsp;&nbsp; <img src="../../assets/vectorSmartObjectCopy3.png" alt=""></div>
+    </div>
+      <!-- <div class="cardHead">Recent Cars</div> -->
+      <div id="recentCard" #recentCard>
+      <div class="recent-car-card hover-button">
+        <div class="card-head">
+            <div class="card-head-title">Car Title</div>
+            <div class="card-head-logo">
+                <img class="card-head-logo-img"
+                    src="../../assets/bmwLogo.png"
+                    alt="">
+            </div>
+        </div>
+        <div class="card-body-img-container">
+            <img class="card-body-img" src="../../assets/porcheCar.png" alt="">
+        
+          </div>
+        <div class="card-footer-container">
+            <div class="card-footer-left">
+              <ion-icon name="card"  class="card-footer-left-img"></ion-icon>
+                <!-- <img class="card-footer-left-img" src="./Image 13.png" alt=""> -->
+                <div class="card-footer-left-text">AED 450/Per Day</div>
+            </div>
+            <div class="card-footer-right">
+                <div class="card-footer-details-btn hover-button"> Details
+
+                </div>
+            </div>
+            <div class="round-opacity">
+            </div>
+        </div>
+    </div>
+
+    <div class="recent-car-card hover-button">
+      <div class="card-head">
+          <div class="card-head-title">Car Title</div>
+          <div class="card-head-logo">
+              <img class="card-head-logo-img"
+                  src="../../assets/audi.png"
+                  alt="">
+          </div>
+      </div>
+      <div class="card-body-img-container">
+          <img class="card-body-img" src="../../assets/porcheCar.png" alt="">
+      
+        </div>
+      <div class="card-footer-container">
+          <div class="card-footer-left">
+            <ion-icon name="card"  class="card-footer-left-img"></ion-icon>
+
+            <div class="card-footer-left-text">AED 450/Per Day</div>
+          </div>
+          <div class="card-footer-right">
+              <div class="card-footer-details-btn"> Details
+                <ion-icon name="arrow-round-forward"></ion-icon>
+              </div>
+          </div>
+          <div class="round-opacity">
+          </div>
+      </div>
   </div>
+
+
+  <div class="recent-car-card hover-button">
+    <div class="card-head">
+        <div class="card-head-title">Car Title</div>
+        <div class="card-head-logo">
+            <img class="card-head-logo-img"
+                src="../../assets/audi.png"
+                alt="">
+        </div>
+    </div>
+    <div class="card-body-img-container">
+        <img class="card-body-img" src="../../assets/porcheCar.png" alt="">
+    
+      </div>
+    <div class="card-footer-container">
+        <div class="card-footer-left">
+          <ion-icon name="card"  class="card-footer-left-img"></ion-icon>
+
+          <div class="card-footer-left-text">AED 450/Per Day</div>
+        </div>
+        <div class="card-footer-right">
+            <div class="card-footer-details-btn hover-button"> Details
+              <ion-icon name="arrow-round-forward"></ion-icon>
+            </div>
+        </div>
+        <div class="round-opacity">
+        </div>
+    </div>
+</div>
+  
+</div>
+
+
+
+    
+      <div id="bottomTabDiv" #bottomTabDiv>
+        <div id="bottomTab" #bottomTab>
+          <div id="homeImg" #homeImg class="tabIcon hover-button">
+            <img src="../../assets/homeWhite.png" alt="" class="bottomImages">
+          </div>
+          <div class="tabIcon hover-button">
+            <img src="../../assets/timeIcon.png" alt="" class="bottomImages">
+          </div>
+          <div class="tabIcon hover-button">
+            <img src="../../assets/notificationIcon.png" alt="" class="bottomImages">
+          </div>
+          <div class="tabIcon hover-button">
+            <img src="../../assets/user.png" alt="" class="bottomImages">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </ion-content>
+<!-- ionic cordova platform add android
+ionic cordova build android -->
